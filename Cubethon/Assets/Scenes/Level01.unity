@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8774659290197360140, guid: 490862db363e0e54d9cb8a868b957bc4, type: 3}
   m_PrefabInstance: {fileID: 8774659290075427422}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8774659290075427423}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c20b9a177d70a04ca15dcb02f8a3fd8, type: 3}
@@ -1681,7 +1681,7 @@ PrefabInstance:
       objectReference: {fileID: 1624707854}
     - target: {fileID: 8774659290197360140, guid: 490862db363e0e54d9cb8a868b957bc4, type: 3}
       propertyPath: obstacleSpawnNum
-      value: 10000
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8774659290197360140, guid: 490862db363e0e54d9cb8a868b957bc4, type: 3}
       propertyPath: incrementAdjuster
@@ -1801,3 +1801,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 490862db363e0e54d9cb8a868b957bc4, type: 3}
+--- !u!1 &8774659290075427423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8774659290197360143, guid: 490862db363e0e54d9cb8a868b957bc4, type: 3}
+  m_PrefabInstance: {fileID: 8774659290075427422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8774659290075427424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8774659290075427423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf62d6b8ed18b3243ae2a507a433d17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRecording: 0
+  _isReplaying: 0
+  _replayTime: 0
+  _recordingTime: 0
+  Replayed: 0
