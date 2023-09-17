@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8774659290197360143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8774659290197360141}
+  - component: {fileID: 8774659290197360140}
+  m_Layer: 0
+  m_Name: gameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8774659290197360141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8774659290197360143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 657.6561, y: 208.75385, z: 50.802734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8774659290197360140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8774659290197360143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c20b9a177d70a04ca15dcb02f8a3fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameHasEnded: 0
+  offStartMenu: 0
+  restarDelay: 0.5
+  completeLevelUi: {fileID: 0}
+  Obstacle:
+  - {fileID: 1423728421761345101, guid: bd9d32fdc107f964dbfc04e38772944e, type: 3}
+  - {fileID: 1423728421761345101, guid: 3629199eccc53764bbd8baf86ad530d5, type: 3}
+  - {fileID: 1423728421761345101, guid: 3c10a5f4f9f5c1544bb4eb5617586e51, type: 3}
+  - {fileID: 1423728421761345101, guid: 79cc9fa056844554cb31da78e84fda12, type: 3}
+  - {fileID: 1423728421761345101, guid: e7e0500b3e2540d4c9929a291e9d15b8, type: 3}
+  - {fileID: 1423728421761345101, guid: 66e9f40ab851f954383324a3a9b24369, type: 3}
+  - {fileID: 852717824271916650, guid: 47e696acaee92524cb670addd3291445, type: 3}
+  spawnTime: 0.5
+  startSpawnTime: 0
+  incrementAdjuster: 10000
+  difficulty: 1
+  spawnPoint: {fileID: 0}
