@@ -23,6 +23,7 @@ namespace Cubethon.Command
         public Transform spawnPoint;
         public int obstacleCounter;
         public TextMeshProUGUI ReplayText;
+        public List<int> randomNums;
         private void Start()
         {
             obstacleCounter = 0;
@@ -31,7 +32,7 @@ namespace Cubethon.Command
             _invoker = FindObjectOfType<Invoker>();
             startSpawnTime = spawnTime;
             difficulty = Data.instance.difficulty;
-            startSpawn();
+            //startSpawn();
         }
         public void CompleteLevel()
         {
@@ -82,16 +83,21 @@ namespace Cubethon.Command
         }
         public void spawnObstacles()
         {
-            
-            obstacles[obstacleCounter].ResetPosition(spawnPoint);
-            obstacles[obstacleCounter].gameObject.SetActive(true);
-            obstacleCounter++;
+
+            int random = Random.Range(0, ObstaclesToSpawn.Count);
+            GameObject obstacle = Instantiate(ObstaclesToSpawn[random], spawnPoint);
+            ObstacleMovement obstaclemvmt = obstacle.GetComponent<ObstacleMovement>();
+            randomNums.Add(random);
+            obstacles.Add(obstaclemvmt);
+            spawnPoint.DetachChildren();
         }
         public void ReplaySpawns()
         {
-            obstacles[0].ResetPosition(spawnPoint);
-            obstacles[0].gameObject.SetActive(true);
-            obstacles.RemoveAt(0);
+            int random = Random.Range(0, ObstaclesToSpawn.Count);
+            GameObject obstacle = Instantiate(ObstaclesToSpawn[randomNums[obstacleCounter]], spawnPoint);
+            ObstacleMovement obstaclemvmt = obstacle.GetComponent<ObstacleMovement>();
+            spawnPoint.DetachChildren();
+            obstacleCounter++;
         }
         public void startSpawn()
         {
